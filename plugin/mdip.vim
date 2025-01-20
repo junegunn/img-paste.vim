@@ -236,7 +236,6 @@ function! mdip#MarkdownClipboardImage()
         elseif s:Confirm("This file name already exists. Overwrite? [y/n] ")
             break
         endif
-        endif
     endwhile
 
     let tmpfile = s:SaveFileTMP(s:workdir, g:mdip_tmpname)
